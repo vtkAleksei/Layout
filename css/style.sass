@@ -20,7 +20,7 @@ ul
 
 .header
     height: 75px
-    background: #222222
+    background: $colorContent
     display: flex
     align-items: center
     justify-content: space-between
@@ -39,30 +39,30 @@ ul
         width: 50%
 
     &_image
-        width: 100%
+        width: $widthImage
 
     &_text
         align-self: center
 
     &_content
-        border-left: 12px solid #F16D7F
+        border-left: 12px solid $colorDedicated
 
     &_h1
         font-weight: 900
         font-size: 48px
         line-height: 58px
-        color: #222222
+        color: $colorContent
         padding-left: 16px
 
     &_h2
         font-weight: 400
         font-size: 32px
         line-height: 38px
-        color: #222222
+        color: $colorContent
         padding-left: 16px
 
     &_span
-        color: #F16D7F
+        color: $colorDedicated
 
 .catalog
     margin-top: 64px
@@ -105,11 +105,11 @@ ul
     &_h2
         font-size: 16px
         line-height: 19px
-        color: #FFFFFF
+        color: $colorSecondary
         font-weight: normal
 
     &_h1
-        color: #F16D7F
+        color: $colorDedicated
         font-weight: normal
         font-size: 24px
         line-height: 19px
@@ -122,7 +122,7 @@ ul
     font-weight: normal
     font-size: 30px
     line-height: 36px
-    color: #222222
+    color: $colorContent
     margin-bottom: 6px
 
 .heading_text
@@ -145,7 +145,7 @@ ul
     position: relative
 
     &_img
-        width: 100%
+        width: $widthImage
 
     &_link
         display: flex
@@ -172,7 +172,7 @@ ul
     font-weight: normal
     font-size: 16px
     line-height: 19px
-    color: #F16D7F
+    color: $colorDedicated
     margin-top: 18px
     padding-bottom: 20px
 
@@ -194,15 +194,15 @@ ul
     display: none
     justify-content: center
     align-items: center
-    border: 1px solid #FFFFFF
+    border: 1px solid $colorSecondary
     width: 139px
     height: 44px
     font-size: 14px
     line-height: 17px
-    color: #FFFFFF
+    color: $colorSecondary
 
     &:hover
-        background-color: #fff
+        background-color: $colorSecondary
         color: #000
 
     &:hover .product_cart path
@@ -218,17 +218,20 @@ ul
     border: 1px solid #FF6A6A
     padding: 14px 38px
     text-decoration: none
+    display: inline-flex
+    align-items: center
+    justify-content: center
 
     &:hover
-        background: #F16D7F
-        color: #FFFFFF
+        background: $colorDedicated
+        color: $colorSecondary
 
 .footer
     margin-top: 96px
 
     &_top
         height: 341px
-        background: #222224
+        background: $colorContent
         display: flex
         align-items: center
         text-align: center
@@ -236,7 +239,7 @@ ul
     &_top_header
         font-size: 20px
         line-height: 24px
-        color: #FBFBFB
+        color: $colorFooter
         margin-top: 24px
         margin-bottom: 16px
 
@@ -245,7 +248,7 @@ ul
         font-size: 14px
         line-height: 17px
         text-align: center
-        color: #FBFBFB
+        color: $colorFooter
 
     &_middle
         height: 448px
@@ -265,7 +268,7 @@ ul
         font-size: 20px
         line-height: 24px
         text-align: center
-        color: #222224
+        color: $colorContent
 
     &_middle_photo
         margin-bottom: 30px
@@ -280,12 +283,12 @@ ul
     &_h1
         font-size: 24px
         text-align: center
-        color: #222224
+        color: $colorContent
 
     &_h2
         font-size: 20px
         text-align: center
-        color: #222224
+        color: $colorContent
         font-weight: normal
         margin-bottom: 32px
 
@@ -296,7 +299,7 @@ ul
     border-bottom-left-radius: 25px
     border-top-left-radius: 25px
     border: none
-    color: #222224
+    color: $colorContent
     font-size: 14px
     padding-left: 22px
     outline: none
@@ -307,11 +310,11 @@ ul
 .button_subscription
     height: 49px
     width: 100px
-    background: #F16D7F
+    background: $colorDedicated
     border-bottom-right-radius: 25px
     border-top-right-radius: 25px
     border: none
-    color: #FFFFFF
+    color: $colorSecondary
     font-size: 14px
     text-align: center
     margin-left: -3px
@@ -320,7 +323,7 @@ ul
 
 .footer_bottom
     height: 79px
-    background: #222224
+    background: $colorContent
     display: flex
     justify-content: space-between
     align-items: center
@@ -328,14 +331,15 @@ ul
 .copyright
     font-size: 16px
     line-height: 19px
-    color: #FBFBFB
+    color: $colorFooter
 
 .color_pink_svg:hover
-    fill: #F16D7F
+    fill: $colorDedicated
 
 @import style-catalog
 
 @import style-product
+
 
 /*@media (max-width: 1024px)
  .center

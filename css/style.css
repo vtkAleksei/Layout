@@ -292,7 +292,7 @@ ul {
 }
 
 .product_add:hover {
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #000;
 }
 
@@ -311,6 +311,15 @@ ul {
   border: 1px solid #FF6A6A;
   padding: 14px 38px;
   text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .product_button:hover {
@@ -324,7 +333,7 @@ ul {
 
 .footer_top {
   height: 341px;
-  background: #222224;
+  background: #222222;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,7 +385,7 @@ ul {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: #222224;
+  color: #222222;
 }
 
 .footer_middle_photo {
@@ -396,13 +405,13 @@ ul {
 .subscription_h1 {
   font-size: 24px;
   text-align: center;
-  color: #222224;
+  color: #222222;
 }
 
 .subscription_h2 {
   font-size: 20px;
   text-align: center;
-  color: #222224;
+  color: #222222;
   font-weight: normal;
   margin-bottom: 32px;
 }
@@ -414,7 +423,7 @@ ul {
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   border: none;
-  color: #222224;
+  color: #222222;
   font-size: 14px;
   padding-left: 22px;
   outline: none;
@@ -441,7 +450,7 @@ ul {
 
 .footer_bottom {
   height: 79px;
-  background: #222224;
+  background: #222222;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,15 +599,140 @@ ul {
 
 .product_description {
   margin-bottom: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.product_slide {
+.slide_product {
   background: #F7F7F7;
   height: 777px;
+  width: 100vw;
+  max-width: 1600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slide_select:hover .select {
+  fill: #F16D7F;
+}
+
+.slide_image {
+  height: 724px;
+  width: 597px;
+  margin-right: 442px;
+  margin-left: 442px;
 }
 
 .for_product_page {
   margin-top: 128px;
+}
+
+.cart {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  height: 601px;
+  width: 1140px;
+  margin-top: -65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart_discription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 64px;
+}
+
+.cart_heading_category {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+}
+
+.cart_heading_product {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+}
+
+.cart_text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E;
+  max-width: 555px;
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+
+.cart_line_1 {
+  background: #EF5B70;
+  height: 3px;
+  width: 63px;
+  border-color: #EF5B70;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.cart_price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+}
+
+.cart_line_2 {
+  border: 1px solid #EAEAEA;
+  width: 641px;
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+
+.cart_filter {
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+.functional {
+  margin-right: 22px;
+}
+
+.product_button:hover .functional path {
+  fill: #FFFFFF;
 }
 
 /*@media (max-width: 1024px)

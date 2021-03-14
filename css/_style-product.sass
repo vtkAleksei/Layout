@@ -1,9 +1,94 @@
 .product_description
     margin-bottom: 128px
+    display: flex
+    flex-direction: column
+    align-items: center
 
-.product_slide
+.slide_product
     background: #F7F7F7
     height: 777px
+    width: 100vw
+    max-width: 1600px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.slide_select:hover .select
+    fill: $colorDedicated
+
+.slide_image
+    height: 724px
+    width: 597px
+    margin-right: 442px
+    margin-left: 442px
 
 .for_product_page
     margin-top: 128px
+
+.cart
+    background: #FFFFFF
+    border: 1px solid #EAEAEA
+    height: 601px
+    width: 1140px
+    margin-top: -65px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &_discription
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 64px
+
+    &_heading_category
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: $colorDedicated
+
+    &_heading_product
+        font-weight: 300
+        font-size: 18px
+        line-height: 22px
+        color: #4D4D4D
+
+    &_text
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: #5E5E5E
+        max-width: 555px
+        margin-top: 48px
+        margin-bottom: 32px
+
+    &_line_1
+        background: $colorCartProduct
+        height: 3px
+        width: 63px
+        border-color: $colorCartProduct
+        margin-top: 12px
+        margin-bottom: 12px
+
+    &_price
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: $colorCartProduct
+
+    &_line_2
+        border: 1px solid #EAEAEA
+        width: 641px
+        margin-top: 65px
+        margin-bottom: 65px
+
+    &_filter
+        margin-top: 0
+        margin-bottom: 48px
+
+.functional
+    margin-right: 22px
+
+.product_button:hover .functional path
+    fill: #FFFFFF
