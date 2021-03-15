@@ -1,0 +1,85 @@
+.line_arrivals
+    height: 148px
+    background: #F8F3F4
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.arrivals
+    font-size: 24px
+    line-height: 29px
+    color: $colorDedicated
+    font-weight: normal
+
+.navigation
+    display: flex
+
+    &-item
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+
+    &_list
+        &:not(:last-child)::after
+            content: '/'
+            margin-left: 8px
+            margin-right: 8px
+        &:last-child a
+            color: $colorDedicated
+
+.box_filter
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+    display: flex
+    align-items: center
+    margin-top: 51px
+    margin-bottom: 64px
+
+.filter_text
+    font-weight: 600
+    color: #000000
+    padding-left: 16px
+
+    &_icon
+        margin-right: 304px
+        margin-left: 10px
+
+.filter_icons
+    margin-left: 10px
+    margin-right: 28px
+
+.pagination_elemet
+    display: flex
+    justify-content: center
+    margin-top: 48px
+
+.pagination
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid #EBEBEB
+    width: 282px
+    height: 44px
+
+.page-link
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #EBEBEB
+
+.active
+    color: $colorDedicated
+
+.go_another_page
+    color: #000000
+    font-size: 28px
+
+.page-item:hover
+    background: rgb(126, 151, 226)
+
+.page-item:not(:last-child)
+    margin-right: 17px
