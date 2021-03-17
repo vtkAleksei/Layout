@@ -14,6 +14,13 @@ a
 ul
     list-style: none
 
+summary
+    display: block
+    outline: none
+
+    &::-webkit-details-marker
+        display: none
+
 .center
     padding-left: calc(50% - 570px)
     padding-right: calc(50% - 570px)
@@ -302,6 +309,7 @@ ul
     color: $colorContent
     font-size: 14px
     padding-left: 22px
+    padding-right: 22px
     outline: none
 
 .button_subscription:hover

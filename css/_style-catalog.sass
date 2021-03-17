@@ -28,29 +28,99 @@
         &:last-child a
             color: $colorDedicated
 
-.box_filter
-    font-style: normal
-    font-weight: normal
-    font-size: 14px
-    line-height: 17px
-    color: #6F6E6E
+.filter-sort
     display: flex
-    align-items: center
     margin-top: 51px
     margin-bottom: 64px
 
-.filter_text
-    font-weight: 600
-    color: #000000
-    padding-left: 16px
+.filter
+    margin-right: 30px
+    width: 360px
+    position: relative
 
-    &_icon
-        margin-right: 304px
-        margin-left: 10px
+    &_box
+        width: 100%
+        padding: 13px 16px 16px
+        position: absolute
+        z-index: 1
 
-.filter_icons
-    margin-left: 10px
-    margin-right: 28px
+        &[open]
+            background: $colorSecondary
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+            & .filter_summary
+                color: $colorDedicated
+
+            & path
+                fill: $colorDedicated
+
+    &_summary
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        margin-right: 11px
+
+    &_point
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+
+        &_summary
+            border-left: 5px solid #EF5B70
+            border-bottom: 1px solid #EBEBEB
+            padding: 8px 0 11px 11px
+            margin-top: 24px
+
+            &:not(:last-child)
+                margin-bottom: 24px
+
+        &[open]
+            .filter_point_heading
+                color: #EF5B70
+
+    &_list
+        padding-left: 16px
+
+        & a
+            color: #6F6E6E
+
+        & li:not(:last-child)
+            margin-bottom: 11px
+
+.sort
+    display: flex
+    position: relative
+
+    &_summary
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        margin-right: 10px
+
+    &_by[open] .sort_check
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        
+
+    &_icons
+        margin-right: 28px
+
+    &_check
+        display: flex
+        flex-direction: column
+        margin-top: 5px
+        padding: 10px 20px 10px 10px
+        position: absolute
+        z-index: 1
+        
+        &_index
+            font-size: 14px
+            line-height: 16px
+            color: #6F6E6E
+            margin-top: 10px
+            margin-left: 10px
+            width: 100%
 
 .pagination_elemet
     display: flex
