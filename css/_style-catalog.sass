@@ -60,6 +60,7 @@
         line-height: 17px
         color: #000000
         margin-right: 11px
+        cursor: pointer
 
     &_point
         font-size: 14px
@@ -71,6 +72,7 @@
             border-bottom: 1px solid #EBEBEB
             padding: 8px 0 11px 11px
             margin-top: 24px
+            cursor: pointer
 
             &:not(:last-child)
                 margin-bottom: 24px
@@ -85,6 +87,9 @@
         & a
             color: #6F6E6E
 
+            &:hover
+                color: #EF5B70
+
         & li:not(:last-child)
             margin-bottom: 11px
 
@@ -97,14 +102,15 @@
         line-height: 17px
         color: #6F6E6E
         margin-right: 10px
+        cursor: pointer
 
     &_by[open] .sort_check
         background: #FFFFFF
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
-        
 
     &_icons
         margin-right: 28px
+        cursor: pointer
 
     &_check
         display: flex
@@ -113,7 +119,7 @@
         padding: 10px 20px 10px 10px
         position: absolute
         z-index: 1
-        
+
         &_index
             font-size: 14px
             line-height: 16px

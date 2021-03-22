@@ -153,6 +153,7 @@ summary
 
     &_img
         width: $widthImage
+        transition: all 0.5s
 
     &_link
         display: flex
@@ -188,6 +189,7 @@ summary
 
 .product:hover .product_img
     filter: brightness(0.5)
+    transform: scale(1.03,1.03)
 
 .button
     text-align: center
@@ -207,16 +209,22 @@ summary
     font-size: 14px
     line-height: 17px
     color: $colorSecondary
+    transition: all 0.5s
 
     &:hover
         background-color: $colorSecondary
         color: #000
-
+      
     &:hover .product_cart path
         fill: black
 
 .product_cart
     margin-right: 11px
+
+    & path
+        fill: white
+        transition: all 0.5s
+
 
 .product_button
     font-size: 16px
@@ -228,6 +236,7 @@ summary
     display: inline-flex
     align-items: center
     justify-content: center
+    transition: all 0.5s
 
     &:hover
         background: $colorDedicated
@@ -347,6 +356,7 @@ summary
 @import style-catalog
 @import style-product
 @import style-cart
+@import style-registration
 
 /*@media (max-width: 1024px)
  .center
