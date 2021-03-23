@@ -1,0 +1,168 @@
+.shopping_cart
+    margin-top: 96px
+    display: flex
+    justify-content: space-between
+
+.purchase
+    display: flex
+    flex-direction: column
+    gap: 40px
+
+    &_card
+        height: 306px
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+        display: flex
+
+    &_image
+        width: 262px
+
+    &_img
+        width: $widthImage
+
+    &_definition
+        height: 306px
+        width: 390px
+        background: $colorSecondary
+        padding-left: 31px
+        padding-top: 22px
+        position: relative
+
+    &_heading
+        font-size: 24px
+        line-height: 29px
+        color: $colorContent
+        width: 262px
+        margin-bottom: 42px
+
+    &_text
+        font-size: 22px
+        line-height: 26px
+        color: #575757
+
+        &:not(:last-child)
+            margin-bottom: 6px
+
+    &_price
+        color: $colorDedicated
+
+    &_quantity
+        border: 1px solid #EAEAEA
+        width: 44px
+        height: 24px
+        margin-left: 24px
+        text-align: center
+        font-size: 18px
+        line-height: 22px
+        color: #656565
+
+    &_close_card
+        position: absolute
+        right: 22px
+        top: 28px
+
+        & path
+            fill: #575757
+            transition: all 0.5s
+
+            &:hover
+                fill: $colorContent
+
+    &_control
+        display: flex
+        justify-content: space-between
+        margin-top: 32px
+
+    &_button
+        background: $colorSecondary
+        border: 1px solid $colorTextCart
+        width: 224px
+        height: 49px
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        outline: none
+        transition: all 0.5s
+        cursor: pointer
+
+        &:hover
+            color: $colorSecondary
+            background: $colorTextCart
+
+.delivery
+    display: flex
+    flex-direction: column
+    padding-top: 17px
+
+    &_adress
+        display: flex
+        flex-direction: column
+
+        &_heading
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: $colorContent
+
+        &_data
+            font-weight: 300
+            font-size: 13px
+            line-height: 16px
+            color: $colorContent
+            border: 1px solid $colorTextCart
+            width: 359px
+            height: 44px
+            margin-top: 21px
+            outline: none
+            padding-left: 16px
+            padding-right: 16px
+
+        &_button
+            font-weight: 300
+            font-size: 11px
+            line-height: 13px
+            color: #4A4A4A
+            height: 34px
+            width: 100px
+            margin-top: 24px
+
+    &_order
+        width: 360px
+        background: #F5F3F3
+        display: flex
+        flex-direction: column
+        padding: 40px 43px 43px
+        text-align: end
+        margin-top: 58px
+
+        &_sub
+            font-size: 11px
+            line-height: 13px
+            color: $colorTextCart
+            margin-bottom: 12px
+
+        &_indent
+            margin-left: 30px
+
+        &_line
+            background: #E2E2E2
+            height: 1px
+            width: 275px
+            margin-top: 21px
+            margin-bottom: 17px
+
+        &_button
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: $colorSecondary
+            background: $colorDedicated
+            width: 273px
+            height: 50px
+            outline: none
+            cursor: pointer
+            transition: all 0.5s
+
+            &:hover
+                background: #E05C6E
