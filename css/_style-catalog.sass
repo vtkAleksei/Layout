@@ -1,0 +1,214 @@
+.line_arrivals
+    height: 148px
+    background: #F8F3F4
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.arrivals
+    font-size: 24px
+    line-height: 29px
+    color: $colorDedicated
+    font-weight: normal
+
+.navigation
+    display: flex
+
+    &-item
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+
+    &_list
+        &:not(:last-child)::after
+            content: '/'
+            margin-left: 8px
+            margin-right: 8px
+        &:last-child a
+            color: $colorDedicated
+
+.filter-sort
+    display: flex
+    margin-top: 51px
+    margin-bottom: 64px
+
+.filter
+    margin-right: 30px
+    width: 360px
+    position: relative
+
+    &_box
+        padding: 13px 16px 16px
+        position: absolute
+        z-index: 1
+
+        &[open]
+            background: $colorSecondary
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+            & .filter_summary
+                color: $colorDedicated
+
+            & path
+                fill: $colorDedicated
+
+    &_summary
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        margin-right: 11px
+        cursor: pointer
+
+    &_point
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+
+        &_summary
+            border-left: 5px solid #EF5B70
+            border-bottom: 1px solid #EBEBEB
+            padding: 8px 0 11px 11px
+            margin-top: 24px
+            cursor: pointer
+
+            &:not(:last-child)
+                margin-bottom: 24px
+
+        &[open]
+            .filter_point_heading
+                color: #EF5B70
+
+    &_list
+        padding-left: 16px
+
+        & a
+            color: #6F6E6E
+
+            &:hover
+                color: #EF5B70
+
+        & li:not(:last-child)
+            margin-bottom: 11px
+
+.sort
+    display: flex
+    position: relative
+
+    &_summary
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        margin-right: 10px
+        cursor: pointer
+
+    &_by[open] .sort_check
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+    &_icons
+        margin-right: 28px
+        cursor: pointer
+
+    &_check
+        display: flex
+        flex-direction: column
+        margin-top: 5px
+        padding: 10px 20px 10px 10px
+        position: absolute
+        z-index: 1
+
+        &_index
+            font-size: 14px
+            line-height: 16px
+            color: #6F6E6E
+            margin-top: 10px
+            margin-left: 10px
+            width: 100%
+
+.pagination_elemet
+    display: flex
+    justify-content: center
+    margin-top: 48px
+
+.pagination
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid #EBEBEB
+    width: 282px
+    height: 44px
+
+.page-link
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #EBEBEB
+
+.active
+    color: $colorDedicated
+
+.go_another_page
+    color: #000000
+    font-size: 28px
+
+.page-item:hover
+    background: rgb(126, 151, 226)
+
+.page-item:not(:last-child)
+    margin-right: 17px
+
+@media (max-width:768px)
+
+    .filter-sort
+        margin-top: 24px
+        margin-bottom: 40px
+        justify-content: space-between
+
+    .filter_box 
+        padding-left: 0
+    
+    .for_tablet
+        margin-right: 0
+
+    .pagination_elemet
+        margin-top: 40px
+
+@media (max-width:375px)
+
+    .line_arrivals
+        flex-direction: column
+        justify-content: center
+
+    .arrivals
+        margin-bottom: 32px
+    
+
+    .filter-sort
+        margin-bottom: 32px
+
+    .filter 
+        width: 0
+        display: flex
+        align-items: center
+        
+        &_box summary svg
+            width: 38px
+            height: 25px
+
+        &_box[open]
+            width: 344px
+
+    .filter_summary
+        display: none
+
+    .sort_summary 
+        font-size: 12px
+        line-height: 14px
+    
+    .sort_icons 
+        margin-right: 24px 
+
+    .for_tablet 
+        margin-right: 0

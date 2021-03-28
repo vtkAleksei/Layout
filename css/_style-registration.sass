@@ -1,0 +1,94 @@
+.data_person
+    margin-top: 64px
+
+    &_from
+        padding-top: 0
+        flex-direction: row
+        justify-content: space-between
+
+    &_gender
+        font-weight: 300
+        font-size: 11px
+        line-height: 13px
+        color: #000000
+        margin-left: 10px
+        margin-right: 20px
+
+    &_text
+        margin-top: 16px
+        margin-bottom: 40px
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+        max-width: 360px
+
+    &_button
+        width: 167px
+        height: 50px
+
+    &_arrow
+        margin-left: 20px
+
+.gender
+    display: flex
+    margin-top: 32px
+    margin-bottom: 32px
+
+.loyalty
+    max-width: 652px
+
+    &_text
+        font-weight: 300
+        font-size: 24px
+        line-height: 29px
+        color: #000000
+
+        & li
+            margin-bottom: 16px
+            position: relative
+
+        & span
+            position: absolute
+            margin-left:  24px
+
+
+    & ul
+        list-style-image: url(../img/marker-registration.svg)
+        list-style-position: inside
+
+    & p
+        margin-top: 22px
+        margin-bottom: 22px
+
+.for_product_page
+    margin-top: 96px
+
+@media (max-width:768px)
+
+    .center
+        padding-left: calc(50% - 368px)
+        padding-right: calc(50% - 368px)
+
+    .data_person 
+        margin-top: 40px
+
+        &_from
+            column-gap: 22px
+
+    .loyalty_text 
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+
+@media (max-width:375px)
+
+    .center
+        padding-left: calc(50% - 172px)
+        padding-right: calc(50% - 172px)
+
+    .delivery
+        flex-direction: column
+
+    .loyalty
+        margin-top: 40px
